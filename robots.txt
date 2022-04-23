@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://jiayi26.github.io/sitemap.xml
