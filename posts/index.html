@@ -40,20 +40,36 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL�
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MySQL服务删除 注册表中的ControlSet001,ControlSet002,不一定是001和002,可能是ControlSet005、006之类
 步骤5：删除环境变量配置 找到path环境变量，将其中关于mysql的环境变量删除，切记不要全部删除。
 例如：删除 D:\develop_tools\mysql\MySQLServer8.0.26\bin; 这个部分
-2. MySQL的下载、安装、配置 2.1 MySQL的4大版本 MySQL Community Server 社区版本，开源免费，自由下载，但不提供官方技术支持，适用于大多数普通用户。...</p></div><footer class=entry-footer>6 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to " href=https://jiayi26.github.io/posts/%E7%AC%AC02%E7%AB%A0_mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/></a></article><article class=post-entry><header class=entry-header><h2></h2></header><div class=entry-content><p>第03章_基本的SELECT语句 讲师：尚硅谷-宋红康（江湖人称：康师傅）
-官网：http://www.atguigu.com
-1. SQL概述 1.1 SQL背景知识 1946 年，世界上第一台电脑诞生，如今，借由这台电脑发展起来的互联网已经自成江湖。在这几十年里，无数的技术、产业在这片江湖里沉浮，有的方兴未艾，有的已经几幕兴衰。但在这片浩荡的波动里，有一门技术从未消失，甚至“老当益壮”，那就是 SQL。
-45 年前，也就是 1974 年，IBM 研究员发布了一篇揭开数据库技术的论文《SEQUEL：一门结构化的英语查询语言》，直到今天这门结构化的查询语言并没有太大的变化，相比于其他语言，SQL 的半衰期可以说是非常长了。 不论是前端工程师，还是后端算法工程师，都一定会和数据打交道，都需要了解如何又快又准确地提取自己想要的数据。更别提数据分析师了，他们的工作就是和数据打交道，整理不同的报告，以便指导业务决策。
-SQL（Structured Query Language，结构化查询语言）是使用关系模型的数据库应用语言，与数据直接打交道，由IBM上世纪70年代开发出来。后由美国国家标准局（ANSI）开始着手制定SQL标准，先后有SQL-86，SQL-89，SQL-92，SQL-99等标准。
-SQL 有两个重要的标准，分别是 SQL92 和 SQL99，它们分别代表了 92 年和 99 年颁布的 SQL 标准，我们今天使用的 SQL 语言依然遵循这些标准。 不同的数据库生产厂商都支持SQL语句，但都有特有内容。
-1.2 SQL语言排行榜 自从 SQL 加入了 TIOBE 编程语言排行榜，就一直保持在 Top 10。
-1.3 SQL 分类 SQL语言在功能上主要分为如下3大类：
-DDL（Data Definition Languages、数据定义语言），这些语句定义了不同的数据库、表、视图、索引等数据库对象，还可以用来创建、删除、修改数据库和数据表的结构。
-主要的语句关键字包括CREATE、DROP、ALTER等。 DML（Data Manipulation Language、数据操作语言），用于添加、删除、更新和查询数据库记录，并检查数据完整性。...</p></div><footer class=entry-footer>4 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to " href=https://jiayi26.github.io/posts/%E7%AC%AC03%E7%AB%A0_%E5%9F%BA%E6%9C%AC%E7%9A%84select%E8%AF%AD%E5%8F%A5/></a></article><article class=post-entry><header class=entry-header><h2></h2></header><div class=entry-content><p>第04章_运算符 讲师：尚硅谷-宋红康（江湖人称：康师傅）
-官网：http://www.atguigu.com
-1. 算术运算符 算术运算符主要用于数学运算，其可以连接运算符前后的两个数值或表达式，对数值或表达式进行加（+）、减（-）、乘（*）、除（/）和取模（%）运算。
-1．加法与减法运算符
-mysql> SELECT 100, 100 + 0, 100 - 0, 100 + 50, 100 + 50 -30, 100 + 35.5, 100 - 35.5 FROM dual; +-----+---------+---------+----------+--------------+------------+------------+ | 100 | 100 + 0 | 100 - 0 | 100 + 50 | 100 + 50 -30 | 100 + 35.5 | 100 - 35.5 | +-----+---------+---------+----------+--------------+------------+------------+ | 100 | 100 | 100 | 150 | 120 | 135....</p></div><footer class=entry-footer>9 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to " href=https://jiayi26.github.io/posts/%E7%AC%AC04%E7%AB%A0_%E8%BF%90%E7%AE%97%E7%AC%A6/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://jiayi26.github.io/posts/page/2/>Next Page »</a></nav></footer></main><footer class=footer><span>&copy; 2023 <a href=https://jiayi26.github.io/>JIAYI's Blog</a></span>
+2. MySQL的下载、安装、配置 2.1 MySQL的4大版本 MySQL Community Server 社区版本，开源免费，自由下载，但不提供官方技术支持，适用于大多数普通用户。...</p></div><footer class=entry-footer>6 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to " href=https://jiayi26.github.io/posts/%E7%AC%AC02%E7%AB%A0_mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/></a></article><article class=post-entry><header class=entry-header><h2>Docker</h2></header><div class=entry-content><p>什么是Docker Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux或Windows操作系统的机器上。 Docker 是基于 Go 语言实现，遵从apache 2.0协议，并通过（namespace及cgroup等）来提供容器的资源隔离与安全保障。 Docker 是基于 linux 内核实现的，Docker 采用客户端/服务端架构，使用远程API来管理和创建容器，其可以轻松的创建一个轻量级的、可移植的、自给自足的容器。 Docker的主要目标 “Build，Ship and Run Any App,Anywhere”，即通过对应用组件的封装（Packaging）、分发（Distribution）、部署（Deployment）、运行（Runtime）等生命周期的管理，达到应用组件级别的“一次封装，到处运行”。这里的应用组件，既可以是一个Web应用，也可以是一套数据库服务，甚至是一个操作系统。将应用运行在Docker 容器上，可以实现跨平台，跨服务器，只需一次配置准备好相关的应用环境，即可实现到处运行，保证研发和生产环境的一致性，解决了“它可以在我的笔记本电脑上运行！” 问题。
+Docker的组成 镜像(Images)：镜像可以理解为创建实例使用的模板 容器(Container): 容器是从镜像生成对外提供服务的一个或一组服务 仓库(Registry): 保存镜像的仓库，官方仓库: https://hub.docker.com/ 容器和虚拟机的比较 容器和虚拟机具有相似的资源隔离和分配优势，但功能不同，因为容器虚拟化的是操作系统而不是硬件。容器更便携、更高效。
+容器是应用层的抽象，它将代码和依赖项打包在一起。多个容器可以在同一台机器上运行，并与其他容器共享操作系统内核，每个容器在用户空间中作为独立进程运行。与 VM 相比，容器占用的空间更少（容器映像的大小通常为数十 MB），可以处理更多应用程序并且需要更少的 VM 和操作系统。
+虚拟机 (VM) 是物理硬件的抽象，可将一台服务器变成多台服务器。管理程序允许多个虚拟机在单台机器上运行。每个 VM 都包含操作系统、应用程序、必要的二进制文件和库的完整副本——占用数十 GB。VM 的启动速度也比较慢。
+资源利用率更高：一台物理机可以运行数百个容器，但是一般只能运行数十个虚拟机 开销更小：不需要启动单独的虚拟机OS内核占用硬件资源 启动速度更快：可以在数秒内完成启动 集成性更好：和CI/CD（持续集成/持续部署）相关技术结合性更好，实现自动化管理 Docker的安装 官方文档：https://docs.docker.com/engine/install/centos/ 这里以CentOS7为例
+1.卸载旧版本 # yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 2....</p></div><footer class=entry-footer>1 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Docker" href=https://jiayi26.github.io/posts/docker/></a></article><article class=post-entry><header class=entry-header><h2>MySQL环境搭建</h2></header><div class=entry-content><p>第02章_MySQL环境搭建 1. MySQL的卸载 步骤1：停止MySQL服务 在卸载之前，先停止MySQL8.0的服务。按键盘上的“Ctrl + Alt + Delete”组合键，打开“任务管理器”对话框，可以在“服务”列表找到“MySQL8.0”的服务，如果现在“正在运行”状态，可以右键单击服务，选择“停止”选项停止MySQL8.0的服务，如图所示。
+步骤2：软件的卸载 方式1：通过控制面板方式
+卸载MySQL8.0的程序可以和其他桌面应用程序一样直接在“控制面板”选择“卸载程序”，并在程序列表中找到MySQL8.0服务器程序，直接双击卸载即可，如图所示。这种方式删除，数据目录下的数据不会跟着删除。
+方式2：通过360或电脑管家等软件卸载
+略
+方式3：通过安装包提供的卸载功能卸载
+你也可以通过安装向导程序进行MySQL8.0服务器程序的卸载。
+① 再次双击下载的mysql-installer-community-8.0.26.0.msi文件，打开安装向导。安装向导会自动检测已安装的MySQL服务器程序。
+② 选择要卸载的MySQL服务器程序，单击“Remove”（移除），即可进行卸载。
+③ 单击“Next”（下一步）按钮，确认卸载。
+④ 弹出是否同时移除数据目录选择窗口。如果想要同时删除MySQL服务器中的数据，则勾选“Remove the data directory”，如图所示。
+⑤ 执行卸载。单击“Execute”（执行）按钮进行卸载。
+⑥ 完成卸载。单击“Finish”（完成）按钮即可。如果想要同时卸载MySQL8.0的安装向导程序，勾选“Yes，Uninstall MySQL Installer”即可，如图所示。
+步骤3：残余文件的清理 如果再次安装不成功，可以卸载后对残余文件进行清理后再安装。
+（1）服务目录：mysql服务的安装目录
+（2）数据目录：默认在C:\ProgramData\MySQL
+如果自己单独指定过数据目录，就找到自己的数据目录进行删除即可。
+注意：请在卸载前做好数据备份
+在操作完以后，需要重启计算机，然后进行安装即可。如果仍然安装失败，需要继续操作如下步骤4。
+步骤4：清理注册表（选做） 如果前几步做了，再次安装还是失败，那么可以清理注册表。
+如何打开注册表编辑器：在系统的搜索框中输入regedit
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL服务 目录删除 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MySQL服务 目录删除 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\Eventlog\Application\MySQL服务 目录删除 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\MySQL服务 目录删除 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL服务目录删除 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MySQL服务删除 注册表中的ControlSet001,ControlSet002,不一定是001和002,可能是ControlSet005、006之类
+步骤5：删除环境变量配置 找到path环境变量，将其中关于mysql的环境变量删除，切记不要全部删除。
+例如：删除 D:\develop_tools\mysql\MySQLServer8.0.26\bin; 这个部分
+2. MySQL的下载、安装、配置 2.1 MySQL的4大版本 MySQL Community Server 社区版本，开源免费，自由下载，但不提供官方技术支持，适用于大多数普通用户。...</p></div><footer class=entry-footer>6 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to MySQL环境搭建" href=https://jiayi26.github.io/posts/mysql%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/mysql%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/%E7%AC%AC02%E7%AB%A0_mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://jiayi26.github.io/posts/page/2/>Next Page »</a></nav></footer></main><footer class=footer><span>&copy; 2023 <a href=https://jiayi26.github.io/>JIAYI's Blog</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
