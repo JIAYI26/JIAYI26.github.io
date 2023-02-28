@@ -45,31 +45,7 @@ Docker的组成 镜像(Images)：镜像可以理解为创建实例使用的模�
 容器是应用层的抽象，它将代码和依赖项打包在一起。多个容器可以在同一台机器上运行，并与其他容器共享操作系统内核，每个容器在用户空间中作为独立进程运行。与 VM 相比，容器占用的空间更少（容器映像的大小通常为数十 MB），可以处理更多应用程序并且需要更少的 VM 和操作系统。
 虚拟机 (VM) 是物理硬件的抽象，可将一台服务器变成多台服务器。管理程序允许多个虚拟机在单台机器上运行。每个 VM 都包含操作系统、应用程序、必要的二进制文件和库的完整副本——占用数十 GB。VM 的启动速度也比较慢。
 资源利用率更高：一台物理机可以运行数百个容器，但是一般只能运行数十个虚拟机 开销更小：不需要启动单独的虚拟机OS内核占用硬件资源 启动速度更快：可以在数秒内完成启动 集成性更好：和CI/CD（持续集成/持续部署）相关技术结合性更好，实现自动化管理 Docker的安装 官方文档：https://docs.docker.com/engine/install/centos/ 这里以CentOS7为例
-1.卸载旧版本 # yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 2....</p></div><footer class=entry-footer>1 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Docker" href=https://jiayi26.github.io/posts/docker/></a></article><article class=post-entry><header class=entry-header><h2>MySQL环境搭建</h2></header><div class=entry-content><p>第02章_MySQL环境搭建 1. MySQL的卸载 步骤1：停止MySQL服务 在卸载之前，先停止MySQL8.0的服务。按键盘上的“Ctrl + Alt + Delete”组合键，打开“任务管理器”对话框，可以在“服务”列表找到“MySQL8.0”的服务，如果现在“正在运行”状态，可以右键单击服务，选择“停止”选项停止MySQL8.0的服务，如图所示。
-步骤2：软件的卸载 方式1：通过控制面板方式
-卸载MySQL8.0的程序可以和其他桌面应用程序一样直接在“控制面板”选择“卸载程序”，并在程序列表中找到MySQL8.0服务器程序，直接双击卸载即可，如图所示。这种方式删除，数据目录下的数据不会跟着删除。
-方式2：通过360或电脑管家等软件卸载
-略
-方式3：通过安装包提供的卸载功能卸载
-你也可以通过安装向导程序进行MySQL8.0服务器程序的卸载。
-① 再次双击下载的mysql-installer-community-8.0.26.0.msi文件，打开安装向导。安装向导会自动检测已安装的MySQL服务器程序。
-② 选择要卸载的MySQL服务器程序，单击“Remove”（移除），即可进行卸载。
-③ 单击“Next”（下一步）按钮，确认卸载。
-④ 弹出是否同时移除数据目录选择窗口。如果想要同时删除MySQL服务器中的数据，则勾选“Remove the data directory”，如图所示。
-⑤ 执行卸载。单击“Execute”（执行）按钮进行卸载。
-⑥ 完成卸载。单击“Finish”（完成）按钮即可。如果想要同时卸载MySQL8.0的安装向导程序，勾选“Yes，Uninstall MySQL Installer”即可，如图所示。
-步骤3：残余文件的清理 如果再次安装不成功，可以卸载后对残余文件进行清理后再安装。
-（1）服务目录：mysql服务的安装目录
-（2）数据目录：默认在C:\ProgramData\MySQL
-如果自己单独指定过数据目录，就找到自己的数据目录进行删除即可。
-注意：请在卸载前做好数据备份
-在操作完以后，需要重启计算机，然后进行安装即可。如果仍然安装失败，需要继续操作如下步骤4。
-步骤4：清理注册表（选做） 如果前几步做了，再次安装还是失败，那么可以清理注册表。
-如何打开注册表编辑器：在系统的搜索框中输入regedit
-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL服务 目录删除 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\MySQL服务 目录删除 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\Eventlog\Application\MySQL服务 目录删除 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\MySQL服务 目录删除 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL服务目录删除 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MySQL服务删除 注册表中的ControlSet001,ControlSet002,不一定是001和002,可能是ControlSet005、006之类
-步骤5：删除环境变量配置 找到path环境变量，将其中关于mysql的环境变量删除，切记不要全部删除。
-例如：删除 D:\develop_tools\mysql\MySQLServer8.0.26\bin; 这个部分
-2. MySQL的下载、安装、配置 2.1 MySQL的4大版本 MySQL Community Server 社区版本，开源免费，自由下载，但不提供官方技术支持，适用于大多数普通用户。...</p></div><footer class=entry-footer>6 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to MySQL环境搭建" href=https://jiayi26.github.io/posts/mysql%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/mysql%E5%9F%BA%E7%A1%80%E7%AF%87%E7%AC%94%E8%AE%B0/%E7%AC%AC02%E7%AB%A0_mysql%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://jiayi26.github.io/posts/page/2/>Next Page »</a></nav></footer></main><footer class=footer><span>&copy; 2023 <a href=https://jiayi26.github.io/>JIAYI's Blog</a></span>
+1.卸载旧版本 # yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 2....</p></div><footer class=entry-footer>1 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Docker" href=https://jiayi26.github.io/posts/docker/></a></article></main><footer class=footer><span>&copy; 2023 <a href=https://jiayi26.github.io/>JIAYI's Blog</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
