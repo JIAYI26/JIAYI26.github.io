@@ -5,7 +5,16 @@
     <link>https://jiayi26.github.io/tags/</link>
     <description>Recent content in Tags on JIAYI&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 28 Oct 2022 21:33:57 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 15:29:33 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL</title>
+      <link>https://jiayi26.github.io/tags/mysql/</link>
+      <pubDate>Tue, 13 Dec 2022 15:29:33 +0800</pubDate>
+      
+      <guid>https://jiayi26.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>TCP</title>
       <link>https://jiayi26.github.io/tags/tcp/</link>
@@ -39,15 +48,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jiayi26.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MySQL</title>
-      <link>https://jiayi26.github.io/tags/mysql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jiayi26.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
