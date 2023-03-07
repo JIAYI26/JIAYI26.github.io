@@ -5,20 +5,11 @@
     <link>https://jiayi26.github.io/</link>
     <description>Recent content on JIAYI&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 23 Apr 2022 21:22:48 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>https://jiayi26.github.io/posts/test/</link>
-      <pubDate>Sat, 23 Apr 2022 21:22:48 +0800</pubDate>
-      
-      <guid>https://jiayi26.github.io/posts/test/</guid>
-      <description>welcome！</description>
-    </item>
-    
+    <lastBuildDate>Wed, 25 May 2022 00:18:48 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
       <link>https://jiayi26.github.io/posts/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 May 2022 00:18:48 +0800</pubDate>
       
       <guid>https://jiayi26.github.io/posts/docker/</guid>
       <description>什么是Docker  Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux或Windows操作系统的机器上。 Docker 是基于 Go 语言实现，遵从apache 2.0协议，并通过（namespace及cgroup等）来提供容器的资源隔离与安全保障。 Docker 是基于 linux 内核实现的，Docker 采用客户端/服务端架构，使用远程API来管理和创建容器，其可以轻松的创建一个轻量级的、可移植的、自给自足的容器。  Docker的主要目标 &amp;ldquo;Build，Ship and Run Any App,Anywhere&amp;rdquo;，即通过对应用组件的封装（Packaging）、分发（Distribution）、部署（Deployment）、运行（Runtime）等生命周期的管理，达到应用组件级别的“一次封装，到处运行”。这里的应用组件，既可以是一个Web应用，也可以是一套数据库服务，甚至是一个操作系统。将应用运行在Docker 容器上，可以实现跨平台，跨服务器，只需一次配置准备好相关的应用环境，即可实现到处运行，保证研发和生产环境的一致性，解决了“它可以在我的笔记本电脑上运行！” 问题。
@@ -27,6 +18,15 @@ Docker的组成  镜像(Images)：镜像可以理解为创建实例使用的模�
 虚拟机 (VM) 是物理硬件的抽象，可将一台服务器变成多台服务器。管理程序允许多个虚拟机在单台机器上运行。每个 VM 都包含操作系统、应用程序、必要的二进制文件和库的完整副本——占用数十 GB。VM 的启动速度也比较慢。
  资源利用率更高：一台物理机可以运行数百个容器，但是一般只能运行数十个虚拟机 开销更小：不需要启动单独的虚拟机OS内核占用硬件资源 启动速度更快：可以在数秒内完成启动 集成性更好：和CI/CD（持续集成/持续部署）相关技术结合性更好，实现自动化管理   Docker的安装 官方文档：https://docs.docker.com/engine/install/centos/ 这里以CentOS7为例
 1.卸载旧版本 # yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 2.</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://jiayi26.github.io/posts/test/</link>
+      <pubDate>Sat, 23 Apr 2022 21:22:48 +0800</pubDate>
+      
+      <guid>https://jiayi26.github.io/posts/test/</guid>
+      <description>welcome！</description>
     </item>
     
     <item>

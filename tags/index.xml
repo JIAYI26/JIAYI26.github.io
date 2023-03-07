@@ -4,11 +4,12 @@
     <title>Tags on JIAYI&#39;s Blog</title>
     <link>https://jiayi26.github.io/tags/</link>
     <description>Recent content in Tags on JIAYI&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://jiayi26.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 25 May 2022 00:18:48 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
       <link>https://jiayi26.github.io/tags/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 May 2022 00:18:48 +0800</pubDate>
       
       <guid>https://jiayi26.github.io/tags/docker/</guid>
       <description></description>
