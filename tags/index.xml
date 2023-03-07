@@ -5,13 +5,40 @@
     <link>https://jiayi26.github.io/tags/</link>
     <description>Recent content in Tags on JIAYI&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 25 May 2022 00:18:48 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Oct 2022 21:33:57 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TCP</title>
+      <link>https://jiayi26.github.io/tags/tcp/</link>
+      <pubDate>Fri, 28 Oct 2022 21:33:57 +0800</pubDate>
+      
+      <guid>https://jiayi26.github.io/tags/tcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://jiayi26.github.io/tags/kubernetes/</link>
+      <pubDate>Tue, 16 Aug 2022 22:23:48 +0800</pubDate>
+      
+      <guid>https://jiayi26.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Docker</title>
       <link>https://jiayi26.github.io/tags/docker/</link>
       <pubDate>Wed, 25 May 2022 00:18:48 +0800</pubDate>
       
       <guid>https://jiayi26.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://jiayi26.github.io/tags/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiayi26.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
