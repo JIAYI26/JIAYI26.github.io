@@ -319,17 +319,6 @@ mysql&amp;gt; SELECT 100, 100 + 0, 100 - 0, 100 + 50, 100 + 50 -30, 100 + 35.5, 
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://jiayi26.github.io/posts/git/</link>
-      <pubDate>Thu, 20 Oct 2022 22:06:10 +0800</pubDate>
-      
-      <guid>https://jiayi26.github.io/posts/git/</guid>
-      <description>1. Git的概述 Git 是一个免费的、开源的分布式版本控制系统，可以快速高效地处理从小型到大型的各种项目。
-2. 什么是版本控制？ 记录文件内容变化，最重要的是记录文件修改历史记录。
-3. Git的三种状态  已修改（modified） - 已修改表示修改了文件，但还没保存到数据库中 已暂存（staged） - 已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中 已提交（committed） - 已提交表示数据已经安全的保存在本地数据库中  4. Git的四个区域  工作区（workspace）：当你 git clone 一个项目到本地，相当于在本地克隆了项目的一个副本。工作区是对项目的某个版本独立提取出来的内容。这些从 Git 仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改 暂存区（staging area）：暂存区是一个文件，保存了下次将提交的文件列表信息，一般在 Git 仓库目录中。有时候也被称作 ‘索引’，不过一般说法还是叫暂存区 本地仓库（local repository）：提交更新，找到暂存区域的文件，将快照永久性存储到 Git 本地仓库 远程仓库（remote repository）：以上几个工作区都是在本地。为了让别人可以看到你的修改，你需要将你的更新推送到远程仓库。同理，如果你想同步别人的修改，你需要从远程仓库拉取更新  5. Git命令    命令 说明     git config &amp;ndash;global user.name 用户名 设置用户签名   git config &amp;ndash;global user.email email地址 设置用户email地址   git init 初始化本地库   git clone 远程库地址 从远程库克隆到本地   git status 查看本地库状态   git add 添加文件到暂存区   git restore &amp;ndash;staged 文件名 复位在暂存区的文件(add反悔药)   git rm &amp;ndash;cached 文件名 移除在暂存区的文件(add反悔药)   git commit -m “备注文本” 文件名 提交暂存区文件到本地库（文件名缺省时，将暂存区所有文件提交）   git reset &amp;ndash;hard 版本号 版本间穿梭(配合git reflog使用)   git reset &amp;ndash;hard HEAD^ 穿梭到上一个版本   git branch 列出所有分支   git branch 分支名 创建分支   git checkout 分支名 切换分支   git merge 分支名B 分支B合并到A(A为当前工作目录所处分支)   git branch -d 分支名 删除分支   git remote add 别名 远程仓库地址 添加远程库   git remote -v 查看添加过的远程库   git push 远程库地址或其别名 分支名 推送到远程库   git pull 远程库地址或其别名 分支名 下载远程代码并合并   git diff 比较文件的不同   git log 查看历史提交记录   git reflog 可以查看所有分支的所有操作记录    Git常用命令演示 5.</description>
-    </item>
-    
-    <item>
       <title>Kubernetes概念</title>
       <link>https://jiayi26.github.io/posts/kubernetes%E6%A6%82%E5%BF%B5/</link>
       <pubDate>Tue, 16 Aug 2022 22:23:48 +0800</pubDate>
@@ -385,6 +374,17 @@ Docker的组成  镜像(Images)：镜像可以理解为创建实例使用的模�
 虚拟机 (VM) 是物理硬件的抽象，可将一台服务器变成多台服务器。管理程序允许多个虚拟机在单台机器上运行。每个 VM 都包含操作系统、应用程序、必要的二进制文件和库的完整副本——占用数十 GB。VM 的启动速度也比较慢。
  资源利用率更高：一台物理机可以运行数百个容器，但是一般只能运行数十个虚拟机 开销更小：不需要启动单独的虚拟机OS内核占用硬件资源 启动速度更快：可以在数秒内完成启动 集成性更好：和CI/CD（持续集成/持续部署）相关技术结合性更好，实现自动化管理   Docker的安装 官方文档：https://docs.docker.com/engine/install/centos/ 这里以CentOS7为例
 1.卸载旧版本 # yum remove docker \ docker-client \ docker-client-latest \ docker-common \ docker-latest \ docker-latest-logrotate \ docker-logrotate \ docker-engine 2.</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://jiayi26.github.io/posts/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiayi26.github.io/posts/git/</guid>
+      <description>1. Git的概述 Git 是一个免费的、开源的分布式版本控制系统，可以快速高效地处理从小型到大型的各种项目。
+2. 什么是版本控制？ 记录文件内容变化，最重要的是记录文件修改历史记录。
+3. Git的三种状态  已修改（modified） - 已修改表示修改了文件，但还没保存到数据库中 已暂存（staged） - 已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中 已提交（committed） - 已提交表示数据已经安全的保存在本地数据库中  4. Git的四个区域  工作区（workspace）：当你 git clone 一个项目到本地，相当于在本地克隆了项目的一个副本。工作区是对项目的某个版本独立提取出来的内容。这些从 Git 仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改 暂存区（staging area）：暂存区是一个文件，保存了下次将提交的文件列表信息，一般在 Git 仓库目录中。有时候也被称作 ‘索引’，不过一般说法还是叫暂存区 本地仓库（local repository）：提交更新，找到暂存区域的文件，将快照永久性存储到 Git 本地仓库 远程仓库（remote repository）：以上几个工作区都是在本地。为了让别人可以看到你的修改，你需要将你的更新推送到远程仓库。同理，如果你想同步别人的修改，你需要从远程仓库拉取更新  5. Git命令    命令 说明     git config &amp;ndash;global user.name 用户名 设置用户签名   git config &amp;ndash;global user.email email地址 设置用户email地址   git init 初始化本地库   git clone 远程库地址 从远程库克隆到本地   git status 查看本地库状态   git add 添加文件到暂存区   git restore &amp;ndash;staged 文件名 复位在暂存区的文件(add反悔药)   git rm &amp;ndash;cached 文件名 移除在暂存区的文件(add反悔药)   git commit -m “备注文本” 文件名 提交暂存区文件到本地库（文件名缺省时，将暂存区所有文件提交）   git reset &amp;ndash;hard 版本号 版本间穿梭(配合git reflog使用)   git reset &amp;ndash;hard HEAD^ 穿梭到上一个版本   git branch 列出所有分支   git branch 分支名 创建分支   git checkout 分支名 切换分支   git merge 分支名B 分支B合并到A(A为当前工作目录所处分支)   git branch -d 分支名 删除分支   git remote add 别名 远程仓库地址 添加远程库   git remote -v 查看添加过的远程库   git push 远程库地址或其别名 分支名 推送到远程库   git pull 远程库地址或其别名 分支名 下载远程代码并合并   git diff 比较文件的不同   git log 查看历史提交记录   git reflog 可以查看所有分支的所有操作记录    Git常用命令演示 5.</description>
     </item>
     
     <item>
