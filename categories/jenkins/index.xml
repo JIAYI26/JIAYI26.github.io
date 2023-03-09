@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jenkins on JIAYI&#39;s Blog</title>
+    <link>https://jiayi26.github.io/categories/jenkins/</link>
+    <description>Recent content in Jenkins on JIAYI&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 06 Dec 2022 15:21:29 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/categories/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins</title>
+      <link>https://jiayi26.github.io/posts/jenkins/</link>
+      <pubDate>Tue, 06 Dec 2022 15:21:29 +0800</pubDate>
+      
+      <guid>https://jiayi26.github.io/posts/jenkins/</guid>
+      <description>1. Jenkins 的概述? 1.1 Jenkins是什么 Jenkins 是一款开源 CI&amp;amp;CD 软件，用于自动化各种任务，包括构建、测试和部署软件。Jenkins 支持各种运行方式，可通过系统包、Docker 或者通过一个独立的 Java 程序。
+1.2 Jenkins的优点
+ 持续集成和持续交付 易于安装部署配置 丰富的插件支持 分布式构建  2. 持续集成（Continuous Integration） 2.1 什么是持续集成？
+ 定义：持续频繁的（每天多次）将本地代码“集成”到主干分支，并保证主干分支可用。 目的：是让产品可以快速迭代，同时还能保持高质量。它的核心措施是，代码集成到主干之前，必须通过自动化测试。只要有一个测试用例失败，就不能集成。 持续集成并不能消除Bug，而是让它们非常容易发现和改正。  2.2 持续集成的好处?
+ 通过自动化手段提高集成速度，减少维护成本 将问题前置，每次 commit 时就触发编译、测试，更快的发现问题 防止本地代码大幅偏离主干，如果不是经常集成，主干又在不断更新，会导致以后集成的难度变大，甚至难以集成。  2.3 触发方式 自动触发，通过自动化的 CI 服务或工具，自动监听代码库 Git Push &amp;amp; MR 等事件触发。常见的工具如 Jenkins、GitlabCI、CircleCI、GithubActions 等等
+3. 持续交付（Continuous Delivery） 3.1 什么是持续交付？ 定义：是持续集成的下一步，持续频繁地将软件的新版本交付到类生产环境（类似于预发），交付给测试、产品验收。持续交付强调的是“交付”，不管怎么更新，软件是随时随地可以交付的，相比持续集成，持续交付除了交付到类生产环境之外，还会执行一些集成测试、API测试等等，确保交付的产物可以直接交付部署。
+3.2 触发方式 手动触发，通过研发平台手动触发（如触发LinkE预发部署流水线），一般交付结果是一个二进制包或者镜像。
+4. 持续部署（Continuous Deployment） 4.1 什么是持续部署？ 定义：是持续交付的下一步，“自动”将代码部署到生产环境。持续部署强调的是“部署”，它的目标是，代码在任何时刻都是可部署的，可以进入生产阶段。持续部署和持续交付触发方式的区别是，持续部署是自动完成的，持续交付是手动完成的
+4.2 触发方式 自动触发，通过研发平台配置定时任务，自动获取交付产物进行自动部署。 本文章用到的软件工具：</description>
+    </item>
+    
+  </channel>
+</rss>
