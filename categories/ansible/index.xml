@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ansible on JIAYI&#39;s Blog</title>
+    <link>https://jiayi26.github.io/categories/ansible/</link>
+    <description>Recent content in Ansible on JIAYI&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 16 Sep 2021 22:21:29 +0800</lastBuildDate><atom:link href="https://jiayi26.github.io/categories/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible</title>
+      <link>https://jiayi26.github.io/posts/ansible/</link>
+      <pubDate>Thu, 16 Sep 2021 22:21:29 +0800</pubDate>
+      
+      <guid>https://jiayi26.github.io/posts/ansible/</guid>
+      <description>Ansible的概述 Ansible 是基于 Python 开发，集合了众多运维工具（puppet、cfengine、chef、func、 fabric）的优点实现了批量系统配置、批量程序部署、批量运行命令等功能的自动化运维工具。
+它基于模块工作，本身没有批量部署的能力，真正具有批量部署的是ansible所运行的模块。基于ssh协议来实现远程管理，不需要在被执行主机上安装代理。
+Ansible的核心组件  Ansible：核心组件 Modules：包括Ansible自带的核心模块及自定义模块 Plugins：完成模块功能的补充，包括连接插件、邮箱插件 Playbook：剧本；定义Ansible多任务配置文件，完成对主机批量部署操作 Inventory：定义Ansible管理主机的清单 /etc/ansibe/hosts Connection Plugins：负责和被监控端实现通信  Ansible的安装和使用 安装 [root@manager01 ~]# yum install -y ansible 执行模式  ad-hoc模式（点对点模式）：使用单个模块，支持批量执行单条命令。ad-hoc 命令是一种可以快速输入的命令，而且不需要保存起来的命令。就相当于bash中的一句话shell。 playbook模式（剧本模式）：是Ansible主要管理方式，也是Ansible功能强大的关键所在。playbook通过多个task集合完成一类功能，如Web服务的安装部署、数据库服务器的批量备份等。可以简单地把playbook理解为通过组合多条ad-hoc操作的配置文件。  Ansible的配置文件 [root@manager01 ansible]# pwd /etc/ansible [root@manager01 ansible]# vim ansible.cfg inventory = /etc/ansible/hosts	#存放主机清单的文件 forks =5	#并发数，默认5 sudo_user = root	#的执行用户 remote_port = 22	#远程连接端口 host_key_checking = False	#关闭之后第一次连接的远程主机不用输入yes log_path = /var/log/ansible.log	#存放日志的文件 Inventory #/etc/ansible/hosts [root@manager01 ansible]# vim hosts # Ex 1: Ungrouped hosts, specify before any group headers.</description>
+    </item>
+    
+  </channel>
+</rss>

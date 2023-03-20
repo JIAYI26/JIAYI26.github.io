@@ -388,9 +388,9 @@ scheduler 负责容器的编排工作，检查节点的资源状态，把 Pod �
     </item>
     
     <item>
-      <title></title>
+      <title>Ansible</title>
       <link>https://jiayi26.github.io/posts/ansible/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Sep 2021 22:21:29 +0800</pubDate>
       
       <guid>https://jiayi26.github.io/posts/ansible/</guid>
       <description>Ansible的概述 Ansible 是基于 Python 开发，集合了众多运维工具（puppet、cfengine、chef、func、 fabric）的优点实现了批量系统配置、批量程序部署、批量运行命令等功能的自动化运维工具。
