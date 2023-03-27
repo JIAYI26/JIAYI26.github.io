@@ -110,8 +110,6 @@
     <loc>https://jiayi26.github.io/posts/ansible/</loc>
     <lastmod>2021-09-16T22:21:29+08:00</lastmod>
   </url><url>
-    <loc>https://jiayi26.github.io/posts/kubernetes/</loc>
-  </url><url>
     <loc>https://jiayi26.github.io/tags/docker/</loc>
   </url><url>
     <loc>https://jiayi26.github.io/categories/docker/</loc>
@@ -119,6 +117,12 @@
     <loc>https://jiayi26.github.io/posts/docker/</loc>
   </url><url>
     <loc>https://jiayi26.github.io/posts/%E7%AC%AC07%E7%AB%A0-innodb%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/</loc>
+  </url><url>
+    <loc>https://jiayi26.github.io/tags/kubernetes/</loc>
+  </url><url>
+    <loc>https://jiayi26.github.io/categories/kubernetes/</loc>
+  </url><url>
+    <loc>https://jiayi26.github.io/posts/kubernetes/</loc>
   </url><url>
     <loc>https://jiayi26.github.io/tags/linux/</loc>
   </url><url>
